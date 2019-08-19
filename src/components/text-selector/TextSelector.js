@@ -3,18 +3,24 @@ import PropTypes from 'prop-types';
 
 function TextSelector({
   text,
-  handleTextChange
+  handleTextChange,
+  handleSubmit
 }){
   return(
-    <>
-      <input name="fontColor" type="text" value={text} onChange={handleTextChange}/>
-    </>
+    <form onSubmit={handleSubmit} >
+      <input
+        type="text"
+        value={text}
+        onChange={handleTextChange} />
+      <button>Submit</button>
+    </form>
   );
 }
 
 TextSelector.propTypes = {
   text: PropTypes.string.isRequired,
-  handleTextChange: PropTypes.func.isRequired
+  handleTextChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired
 };
 
 export default TextSelector;
