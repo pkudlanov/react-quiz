@@ -2,23 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function ColorSelector({
-  fontColor,
+  color,
   backgroundColor,
-  handleFontColorChange,
+  handleColorChange,
   handleBackgroundColorChange
 }){
   return(
     <>
-      <input name="fontColor" type="color" value={fontColor} onChange={handleFontColorChange}/>
+      <input name="color" type="color" value={color} onChange={handleColorChange}/>
       <input name="backgroundColor" type="color" value={backgroundColor} onChange={handleBackgroundColorChange}/>
     </>
   );
 }
 
 ColorSelector.propTypes = {
-  fontColor: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string.isRequired,
-  handleFontColorChange: PropTypes.func.isRequired,
+  handleColorChange: PropTypes.func.isRequired,
   handleBackgroundColorChange: PropTypes.func.isRequired
 };
 
