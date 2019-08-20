@@ -16,20 +16,3 @@ exports[`ColorSelector component renders ColorSelector 1`] = `
   />
 </Fragment>
 `;
-
-exports[`ColorSelector component renders NoteForm 1`] = `
-<Fragment>
-  <input
-    name="color"
-    onChange={[Function]}
-    type="color"
-    value="green"
-  />
-  <input
-    name="backgroundColor"
-    onChange={[Function]}
-    type="color"
-    value="orange"
-  />
-</Fragment>
-`;

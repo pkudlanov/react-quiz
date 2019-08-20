@@ -7,11 +7,9 @@ function Shape({
   backgroundColor
 }){
   return(
-    <>
-      <p style={{ color, backgroundColor }}>
-        {text}
-      </p>
-    </>
+    <p style={{ color, backgroundColor }}>
+      {text}
+    </p>
   );
 }
 
